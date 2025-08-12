@@ -32,6 +32,15 @@ class Banco:
         return len(self.lista_contas)
 
     def total_valor_em_contas(self):
+        '''
+        saldoTotal = 0.0
+
+        for conta in self.lista_contas:
+            saldoTotal += conta.saldo
+
+        return saldoTotal
+        '''
+
         return float(sum(conta.saldo for conta in self.lista_contas))
 
     def transferir(self, numero_origem, numero_destino, valor):
