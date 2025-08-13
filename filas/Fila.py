@@ -34,7 +34,10 @@ class Fila:
     def __str__(self):
         return str(self._items)
     
-
+    def get_items(self):
+        return self._items
+    
+''' 
 if __name__ == "__main__":
 
     try:
@@ -54,3 +57,4 @@ if __name__ == "__main__":
         print(e)
     finally:
         print("Fim do programa")
+'''
